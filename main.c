@@ -40,6 +40,7 @@ void print_list(struct LList l) {
             printf("%d ", n->value);
             n = n->next;
         }
+        free(n);
     }
     printf("\n");
 }
@@ -70,6 +71,7 @@ void sort(struct LList l) {
             n = n->next;
             p = l.root;
         }
+        free(n);
     }
 }
 
